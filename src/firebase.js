@@ -1,0 +1,31 @@
+// import { initializeApp } from "firebase/app";
+// import "firebase/auth";
+// const firebaseConfig = {
+//   apiKey: process.env.REACT_APP_APIKEY,
+//   authDomain: process.env.REACT_APP_AUTH_DOMIN,
+//   projectId: process.env.REACT_APP__PROJECTID,
+//   storageBucket: process.env.REACT_APP_STORAGEBUKET,
+//   messagingSenderId: process.env.REACT_APP_MESSAING_SENDER_ID,
+//   appId: process.env.REACT_APP_APP_ID,
+// };
+// const app = initializeApp(firebaseConfig);
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_APIKEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMIN,
+  projectId: process.env.REACT_APP__PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUKET,
+  messagingSenderId: process.env.REACT_APP_MESSAING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  databaseURL: process.env.REACT_APP_DATABASE,
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+export default app;
